@@ -9,10 +9,8 @@ table {
 	font-weight: bold;
 }
 #Home{
-	background-image: url("images/Portfolio_Background_9.jpg");	
+	background-image: url("images/Portfolio_Background_9.jpg");		
 	background-repeat: no-repeat;
-	width: 100vw;
-	height: 100vh;	
 	margin:0 auto;
 }
 #Home a{
