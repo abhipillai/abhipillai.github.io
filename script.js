@@ -6,6 +6,7 @@ document.getElementById("button-link").addEventListener("click", function() {
     document.location = "index.html#About";    
 }, false);
 
+
 function changeColor() {
     this.style.backgroundColor = "lavender";
     this.style.color = "#f35435";

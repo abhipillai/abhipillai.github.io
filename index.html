@@ -11,14 +11,20 @@
     </head>
     <body>            
         <section id="Home">
-            <a>
-                <e id="typewriter"></e><br><br>
-                <div id="button-link">
-                    Enter
-                    <i id = "arrow" class = "right-arrow"></i>
-                </div>
-            </a>
-        </section>        
+            <div class = "main-container">
+                <div class = "row">
+                    <div class = "col1">
+                        <a id="typewriter"></a>
+                    </div><br><br>
+                    <div class = "col2">
+                        <a id="button-link">
+                            Enter
+                            <i id = "arrow" class = "right-arrow"></i> 
+                        </a>
+                    </div>
+                </div>         
+            </div>            
+        </section>          
         <section id="About">
             <!--div class="header" id="header">
                 <a href="#Home">Home</a>
@@ -26,30 +32,31 @@
                 <a href="#Project">Projects</a>
                 <a href="#Contact">Contact Details</a>
             </div-->
-            <hr>                                
-            <h1>
-                Welcome!
-            </h1>
-            <table>
-                <tr>
-                    <td>
-                        <a class="heading">About Me<br></br></a>
-                        <a> I am a Masters student at Texas A&M University, studying Management Information Systems
+            <hr>                              
+            <div class="main-container">
+                    About me<br><br>
+                <div class="row">
+                    <div class="col-left">
+                        <a>
+                            I am a Masters student at Texas A&M University, studying Management Information Systems
                             which is a blend of Management and Technology. Having worked in IT for about two years as
                             a software developer building web pages using ASP.Net, I look forward to improving my skills
-                            by learning new technologies and frameworks.
+                            by learning new technologies and frameworks.<br>
                         </a>
                         <ul> 
                             <li>Social Media Analyst</li>
                             <li>Web Developer</li>
                             <li>Software Engineer</li>
                         </ul>
-                    </td>
-                    <td class="tdright"><img src="images/ab.jpg" alt="abhishek"></td>
-                </tr>
-            </table>
+                    </div>
+                    <div class="col-right">
+                        <img src="images/ab.jpg" alt="abhishek">
+                    </div>
+                </div>
+            </div>            
         </section>
         <section id="Skill">
+            <hr>
             <div id="leftP">
                 <table>
                     <tr><td>HTML5</td><td>80%</td></tr>
