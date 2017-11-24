@@ -5,8 +5,6 @@ document.getElementById("button-link").addEventListener("mouseleave", originalCo
 document.getElementById("button-link").addEventListener("click", function() {
     document.location = "index.html#About";    
 }, false);
-document.getElementById("Home").style.height = window.innerHeight + 'px';
-document.getElementById("Home").style.width = window.innerWidth + 'px';
 
 function changeColor() {
     this.style.backgroundColor = "lavender";
