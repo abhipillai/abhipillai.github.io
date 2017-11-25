@@ -34,6 +34,8 @@ window.onload = typeWriter;
 
 function typeWriter(){
     setTimeout(function(){document.getElementById("button-link").style.visibility = "visible"}, speed2);
+    document.getElementById("button-link").style.color = "whitesmoke";
+    document.getElementById("button-link").style.borderColor = "whitesmoke";
     if (i < text.length) {
         document.getElementById("typewriter").innerHTML += text.charAt(i);
         i++;

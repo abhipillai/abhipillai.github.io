@@ -6,51 +6,48 @@
         <title>
             Abhishek Pillai
         </title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
     <body>            
         <section id="Home">
             <div class = "main-container">
+                <br><br><br><br>
                 <div class = "row">
-                    <div class = "col1">
-                        <a id="typewriter"></a>
-                    </div><br><br>
-                    <div class = "col2">
-                        <a id="button-link">
+                    <div class = "col-md-12">
+                        <h1 id="typewriter"></h1>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class = "col-md-12" style="text-align: center">
+                        <h1 id="button-link">
                             Enter
                             <i id = "arrow" class = "right-arrow"></i> 
-                        </a>
+                        </h1>
                     </div>
                 </div>         
             </div>            
         </section>          
         <section id="About">
-            <!--div class="header" id="header">
-                <a href="#Home">Home</a>
-                <a href="#About">About Me</a>
-                <a href="#Project">Projects</a>
-                <a href="#Contact">Contact Details</a>
-            </div-->
             <hr>                              
-            <div class="main-container">
-                    About me<br><br>
+            <div class="container">
+                    <h1>About me</h1><br><br>
                 <div class="row">
-                    <div class="col-left">
-                        <a>
+                    <div class="col-md-8">
+                        <h2>
                             I am a Masters student at Texas A&M University, studying Management Information Systems
                             which is a blend of Management and Technology. Having worked in IT for about two years as
                             a software developer building web pages using ASP.Net, I look forward to improving my skills
                             by learning new technologies and frameworks.<br>
-                        </a>
-                        <ul> 
                             <li>Social Media Analyst</li>
                             <li>Web Developer</li>
                             <li>Software Engineer</li>
-                        </ul>
+                        </h2>
                     </div>
-                    <div class="col-right">
-                        <img src="images/ab.jpg" alt="abhishek">
+                    <div class="col-md-4">
+                        <img class="img-responsive img-rounded" src="images/ab.jpg" alt="abhishek">
                     </div>
                 </div>
             </div>            
@@ -58,10 +55,10 @@
         <section id="Skill">
             <hr>
             <div class="main-container">
-                Skills<br>
+                <h1>Skills</h1><br>
                 <div class="row">
-                    <div class="col-left">
-                        Technology
+                    <div class="col-md-6">
+                        <h2>Technology</h2>
                         <table>
                             <tr><td>HTML5</td><td>80%</td></tr>
                             <tr><td>CSS</td><td>70%</td></tr>
@@ -72,8 +69,8 @@
                             <tr><td>JQuery</td><td>40%</td></tr>
                         </table>
                     </div>
-                    <div class="col-right">
-                        Programming Languages
+                    <div class="col-md-6">
+                        <h2>Programming Languages</h2>
                         <table>
                             <tr><td>Java</td><td>80%</td></tr>
                             <tr><td>C#</td><td>80%</td></tr>
@@ -87,23 +84,24 @@
         <section id="Contact">
             <hr>
             <div class="main-container">
-                Contact Details<br><br>
+                <h1>Contact Details</h1><br><br>
                 <div class="row">
-                    <div class="col-1">
+                    <div class="col-md-8">
                         <a>Abhishek Anilkumar Pillai<br>Phone: (979)304-0481<br>Email: abhipillai@tamu.edu</a>                        
                     </div>
-                    <div class="col-2">
+                    <div class="col-md-1">
                         <img src="images/fb.png" alt="fb">
                     </div>
-                    <div class="col-3">
+                    <div class="col-md-1">
                         <img src="images/twitter.png" alt="twitter">
                     </div>
-                    <div class="col-4">
-                        <img src="images/insta.png" alt="instagram">
+                    <div class="col-md-1">
+                        <img class="img-responsive img-rounded" src="images/insta.png" alt="instagram">
                     </div>
                 </div>
             </div>            
         </section>
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
