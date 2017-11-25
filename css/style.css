@@ -49,10 +49,11 @@ i{
 }
 #About .row{
 	background-color: rgb(190, 31, 31);
+	row: 
 }
 #Contact .row{
 	background-color: rgb(65, 67, 83);
 }
 img{
-	padding: 10px;
+	margin: 10px;
 }
