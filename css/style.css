@@ -1,14 +1,58 @@
-body{
-	font-family: Arial, Helvetica, sans-serif;
-	color: #333;	
+*{
+	margin: 0;
+	padding: 0;	
 }
-#Home{
-	background-image: url("../images/Portfolio_Background_9.jpg");		
+body{
+	font-family: 'Raleway', sans-serif;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+/* ===== Generic CSS ====== */
+.section-header{
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+.section-header h2{
+	position: relative;
+	text-align: center;
+	color: #333;
+	font-size: 30px;
+	font-weight: 400;
+}
+.section-header h2:after{
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	width: 70px;
+	height: 1px;
+	background-color: #129cf3;
+	margin-left: -35px;
+}
+.section-header p{
+	color: #333;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 300;
+	/*text-align: center;*/
+	margin-top: 45px;
+}
+/*  ===== Header ====== */
+.header{
+	background-image: url("../images/beach.png");
+	background-attachment: fixed;
 	background-repeat: no-repeat;
-	margin:0 auto;
+	background-position: 50% 50%;
 	background-size: cover;
-	height : 100vh;
-	width : 100%;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	height: 100vh;
+}
+.header-overlay{
+	background-color: rgba(31, 31, 31, 0.60);
+	height: 100%;
 }
 b{
 	color: rgb(156, 45, 45);
@@ -19,41 +63,60 @@ b:hover{
 #button-link{
 	border: 2px solid gray;
 	display: inline-block;
-	padding-right: 20px;	
+	padding-right: 20px;		
 	margin: 0 auto;
 	visibility: hidden;
+	color: #fff;
 	font-size: 60px;
 	line-height: 72px;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
 	border-radius: 10px;
-}
-i{
-	border: solid white;
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 15px;
-}
-.right-arrow{
-	transform: rotate(-45deg);
-	-webkit-transform: rotate(-45deg);
-}
-.down-arrow{
-	transform: rotate(45deg) translateY(-12px);
-	-webkit-transform: rotate(45deg) translateY(-12px);
-	border: solid #f35435;
-	border-width: 0 5px 5px 0;
 }
 #typewriter{
 	font-size: 60px;
+	font-weight: 300;
+	line-height: 75px;
 	text-align: center;
+	padding-top: 12%;
+	padding-bottom: 5%;
 	color: whitesmoke;
-}
-#About .row{
-	background-color: rgb(190, 31, 31);
-	row: 
-}
-#Contact .row{
-	background-color: rgb(65, 67, 83);
 }
 img{
 	margin: 10px;
+}
+
+/* ===== About us ===== */
+
+.abhishek-image img{
+	margin-top: 80px;
+}
+.job{
+	position: relative;
+	padding-bottom: 30px;
+	padding-left: 160px;
+}
+.job div{
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
+.job div img{
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.job h3{
+	padding-top: 20px;
+	color: #343434;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 600;
+}
+.job p{
+	color: #727272;
+	font-size: 15px;
 }

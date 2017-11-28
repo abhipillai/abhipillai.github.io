@@ -2,56 +2,108 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Lobster|Timmana" rel="stylesheet">
-        <title>
-            Abhishek Pillai
-        </title>
+        <meta charset="utf-8">
+
+        <!-- fonts selected -->
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Timmana|Raleway|Source+Sans+Pro" rel="stylesheet">        
+                
+        <title>Abhishek Pillai</title>
+
+        <!-- css files -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        
+        <!-- favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
     <body>            
-        <section id="Home">
-            <div class = "container">
-                <br><br><br><br>
-                <div class = "row">
-                    <div class = "col-md-12">
-                        <h1 id="typewriter"></h1>
-                        <br><br>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class = "col-md-12" style="text-align: center">
-                        <h1 id="button-link">
-                            Enter
-                            <i id = "arrow" class = "right-arrow"></i> 
-                        </h1>
-                    </div>
-                </div>         
-            </div>            
-        </section>          
-        <section id="About">
-            <hr>                              
+        <header class="header">
+            <div class="header-overlay">
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-md-12">
+                            
+                            <!-- Text -->
+                            <div class="text-center">
+                                <h1 id="typewriter"></h1>
+                            </div>                            
+                            <!-- Button -->
+                            <div class="text-center">
+                                <h1 id="button-link">
+                                    Enter
+                                    <i class="fa fa-angle-right"></i>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>         
+                </div>            
+            </div>
+        </header>          
+        <div class="About">
             <div class="container">
-                <h1>About me</h1><br><br>
                 <div class="row">
-                    <div class="col-md-4">
-                        <img class="img-responsive img-rounded" src="images/ab.jpg" alt="abhishek">
-                    </div>
-                    <div class="col-md-8">
-                        <h2>
-                            I am a Masters student at Texas A&M University, studying Management Information Systems
-                            which is a blend of Management and Technology. Having worked in IT for about two years as
-                            a software developer building web pages using ASP.Net, I look forward to improving my skills
-                            by learning new technologies and frameworks.<br>
-                            <li>Social Media Analyst</li>
-                            <li>Web Developer</li>
-                            <li>Software Engineer</li>
-                        </h2>
+                    <div class="col-md-12">
+                        <div class="section-header">
+                            <h2>ABOUT ME</h2>
+                            <p>
+                                I am a Masters student at Texas A&M University, studying Management Information Systems
+                                which is a blend of Management and Technology. Having worked in IT for about two years as
+                                a software developer building web pages using ASP.Net, I look forward to improving my skills
+                                by learning new technologies and frameworks.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>            
-        </section>
+            </div>
+            <div class="container">                
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="abhishek-image">
+                            <img class="img-responsive img-rounded" src="images/ab.jpg" alt="abhishek">
+                        </div>
+                    </div>
+                    <div class="col-md-9">                                                    
+                        <div class="job-descriptions">
+                            <div class="job">
+                                <div class="job-img">
+                                    <img src="images/blackstone.png" alt="blackstone">
+                                </div>
+                                <h3>Social Media Analyst</h3>
+                                <p>
+                                    As a social media analyst at Blackstone LaunchPad, I help to widen the reach 
+                                    and impact of our organization that aims to help students with entrepreneurial
+                                     interests with the use of social media analysis
+                                </p>
+                            </div>                            
+                            <div class="job">
+                                <div class="job-img">
+                                    <img src="images/tamu.jpg" alt="tamu">
+                                </div>
+                                <h3>Web Developer</h3>
+                                <p>
+                                I was involved in developing the official website using Kentico for the Office of Institutional Effectiveness
+                                and Evaluation. The new website offers more information to the user and the option of
+                                scheduling appointments
+                                </p>
+                            </div>
+                            <div class="job">
+                                <div class="job-img">
+                                    <img src="images/infosys.jpg" alt="infy">
+                                </div>
+                                <h3>Software Developer</h3>
+                                <p>
+                                As a software developer, I designed and developed responsive web pages 
+                                using ASP.Net and integrated web services for users to view the data and project 
+                                managers to update. I also developed a data warehouse for a new application to support 
+                                estimate tracking for different projects
+                                </p>
+                            </div>                                          
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
         <section id="Skill">
             <hr>
             <div class="container">
@@ -101,7 +153,11 @@
                 </div>
             </div>            
         </section>
+        
+        <!--- Bootstrap javascript file -->
+        <script src="js/jquery.js"></script>
         <script src="js/script.js"></script>
         <script src="js/bootstrap.min.js"></script>
+
     </body>
 </html>

@@ -3,22 +3,22 @@
 document.getElementById("button-link").addEventListener("mouseenter", changeColor, false);
 document.getElementById("button-link").addEventListener("mouseleave", originalColor, false);
 document.getElementById("button-link").addEventListener("click", function() {
-    document.location = "index.html#About";    
+    document.getElementsByClassName("About")[0].scrollIntoView();    
 }, false);
 
 
 function changeColor() {
-    this.style.backgroundColor = "lavender";
-    this.style.color = "#f35435";
-    document.getElementById("arrow").classList.remove("right-arrow");
-    document.getElementById("arrow").classList.add("down-arrow");
-    this.style.borderColor = "#f35435";
+    this.style.backgroundColor = "#129cf3";
+    this.style.opacity="0.5";    
+    this.style.borderColor = "#129cf3";
+    document.getElementsByTagName("i")[0].classList.add("fa-angle-down");
+    document.getElementsByTagName("i")[0].classList.remove("fa-angle-right");
 }
 function originalColor() {
     this.style.backgroundColor = "transparent";
-    this.style.color = "white";
-    document.getElementById("arrow").classList.add("right-arrow");
-    document.getElementById("arrow").classList.remove("down-arrow");
+    this.style.opacity="1";
+    document.getElementsByTagName("i")[0].classList.add("fa-angle-right");
+    document.getElementsByTagName("i")[0].classList.remove("fa-angle-down");
     this.style.borderColor = "whitesmoke"
 }
 var text = "Hello, I am ";
