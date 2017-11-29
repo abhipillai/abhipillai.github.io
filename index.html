@@ -17,7 +17,9 @@
         <!-- favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
-    <body>            
+    <body>      
+        
+        <!-- Header -->      
         <header class="header">
             <div class="header-overlay">
                 <div class = "container">
@@ -39,8 +41,11 @@
                     </div>         
                 </div>            
             </div>
-        </header>          
-        <div class="About">
+        </header>    
+
+
+        <!-- About me -->      
+        <section class="About">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -103,11 +108,96 @@
                     </div>
                 </div>            
             </div>
-        </div>
-        <section id="Skill">
-            <hr>
+        </section>
+
+
+        <!-- Projects -->
+        <section class="Projects">
+            <div class="projects-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-header">
+                                <h2>Projects</h2>                                
+                            </div>
+                            <div id="carousel-project" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-project" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-project" data-slide-to="1"></li>
+                                    <li data-target="#carousel-project" data-slide-to="2"></li>
+                                    <li data-target="#carousel-project" data-slide-to="3"></li>
+                                </ol>
+                                <!-- Wrappers -->
+                                <div class="carousel-inner">
+                                    <div class="item active text-center">
+                                        <img src="images/movie-database.jpg" alt="movie-database" 
+                                        class="center-block">
+                                        <div class="project-caption">
+                                            <h2>Movie Collection Database</h2>
+                                            <h4><span>Skills: </span>Angular 2, Node.js, JavaScript, Bootstrap, JQuery</h4>
+                                            <p>Designed web application enabling users to create an account and
+                                                login to add their collection of movies and TV series,
+                                                    mark them as favorites or provide their reviews and read other user's
+                                                    reviews
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item text-center">
+                                        <img src="images/pepsico.jpg" alt="PepsiCo" 
+                                        class="center-block">
+                                        <div class="project-caption">
+                                            <h2>PepsiCo Bid Procurement Analysis</h2>
+                                            <h4><span>Skills: </span>Tableau</h4>
+                                            <p>Analyzed PepsiCo annual procurement process
+                                                and carrier bids across the years to achieve low costs and high service.
+                                                Created a story on Tableau server showcasing the highly effective 
+                                                carrier bids on different lanes
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item text-center">
+                                        <img src="images/dw.jpg" alt="DataWarehouse" 
+                                        class="center-block">
+                                        <div class="project-caption">
+                                            <h2>Dominic's Fine Food Data Warehouse</h2>
+                                            <h4><span>Skills: </span>MS SQL Server, SSIS, SSRS, SSAS and Excel</h4>
+                                            <p>Analyzed sales trends of a retail chain; determined business
+                                                    solutions to improve revenue and increase profitability
+                                                    Designed a data warehouse by concatenating store demographic, sales,
+                                                    and customer data using dimensional models
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item text-center">
+                                        <img src="images/rec.jpg" alt="recession" 
+                                        class="center-block">
+                                        <div class="project-caption">
+                                            <h2>Recession Effect on College Towns</h2>
+                                            <h4><span>Skills: </span>Python: Numpy, Pandas</h4>
+                                            <p>Compared housing rates of university towns against 
+                                                non-university towns during recession of Q3 2008 through Q4 2009
+                                                Proved a hypothesis that both groups performed the same; ran T-Test
+                                            </p>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <!-- Skills -->
+        <section class="Skill">
             <div class="container">
-                <h1>Skills</h1><br>
+                <div class="row">
+                    <div class="col-md=12">
+                        <div class="section-header">
+                            <h2>Skills</h2>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-6">
                         <h2>Technology</h2>
@@ -133,6 +223,7 @@
                 </div>
             </div>            
         </section>
+        <!-- Contact -->
         <section id="Contact">
             <hr>
             <div class="container">

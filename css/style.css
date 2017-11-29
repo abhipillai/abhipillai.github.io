@@ -10,14 +10,15 @@ body{
 
 /* ===== Generic CSS ====== */
 .section-header{
-	padding-top: 40px;
-	padding-bottom: 30px;
+	padding-top: 60px;
+	padding-bottom: 40px;
 }
 .section-header h2{
 	position: relative;
 	text-align: center;
 	color: #333;
-	font-size: 30px;
+	font-size: 40px;
+	text-transform: uppercase;
 	font-weight: 400;
 }
 .section-header h2:after{
@@ -118,4 +119,56 @@ img{
 .job p{
 	color: #727272;
 	font-size: 15px;
+}
+
+/* ========= Projects =============*/
+.Projects{
+	background-image: url("../images/project-bg.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-position: 50% 50%;
+}
+.projects-overlay{
+	background-color: rgba(31, 31, 31, 0.75);
+	padding-top: 20px;
+	padding-bottom: 80px;
+}
+.carousel-indicators{
+	bottom: -40px;
+}
+.carousel-inner .item img{
+	border: 2px solid #129cf3;
+	padding: 3px;
+}
+.Projects h2{
+	color: #d8d8d8;
+}
+.project-caption{
+	padding-bottom: 70px; 
+}
+.project-caption h2{
+	color: #129cf3;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 30px;
+	margin-top: 25px;
+}
+.project-caption h4{
+	color: #129cf3;
+	font-size: 24px;
+}
+.project-caption h4 span{
+	color: #d8d8d8;
+	font-style: italic;
+	font-weight: 400;
+}
+.project-caption p{
+	color: #d8d8d8;
+	font-size: 18px;
+	line-height: 27px;
+	padding-top: 35px;
 }
