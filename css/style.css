@@ -156,6 +156,7 @@ img{
 	font-weight: 900;
 	font-size: 30px;
 	margin-top: 25px;
+	padding-bottom: 10px;
 }
 .project-caption h4{
 	color: #129cf3;
@@ -171,4 +172,17 @@ img{
 	font-size: 18px;
 	line-height: 27px;
 	padding-top: 35px;
+}
+
+/* ========== Skills ========= */
+.skill-names .skill-unit{
+	position: relative;
+	padding-left: 90px;
+	padding-top: 30px;
+	padding-right: 20px;
+}
+.skill-unit .skill-icon{
+	position: absolute;
+	top: 0;
+	left: 0;
 }
