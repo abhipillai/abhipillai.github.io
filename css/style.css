@@ -1,0 +1,188 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+body{
+	font-family: 'Raleway', sans-serif;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+/* ===== Generic CSS ====== */
+.section-header{
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+.section-header h2{
+	position: relative;
+	text-align: center;
+	color: #333;
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+.section-header h2:after{
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	width: 70px;
+	height: 1px;
+	background-color: #129cf3;
+	margin-left: -35px;
+}
+.section-header p{
+	color: #333;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 300;
+	/*text-align: center;*/
+	margin-top: 45px;
+}
+/*  ===== Header ====== */
+.header{
+	background-image: url("../images/beach.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	height: 100vh;
+}
+.header-overlay{
+	background-color: rgba(31, 31, 31, 0.60);
+	height: 100%;
+}
+b{
+	color: rgb(156, 45, 45);
+}
+b:hover{
+	color: rgb(63, 155, 63);
+}
+#button-link{
+	border: 2px solid gray;
+	display: inline-block;
+	padding-right: 20px;		
+	margin: 0 auto;
+	visibility: hidden;
+	color: #fff;
+	font-size: 60px;
+	line-height: 72px;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+	border-radius: 10px;
+}
+#typewriter{
+	font-size: 60px;
+	font-weight: 300;
+	line-height: 75px;
+	text-align: center;
+	padding-top: 12%;
+	padding-bottom: 5%;
+	color: whitesmoke;
+}
+img{
+	margin: 10px;
+}
+
+/* ===== About us ===== */
+.abhishek-image img{
+	margin-top: 80px;
+}
+.job{
+	position: relative;
+	padding-bottom: 30px;
+	padding-left: 160px;
+}
+.job div{
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
+.job div img{
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.job h3{
+	padding-top: 20px;
+	color: #343434;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 600;
+}
+.job p{
+	color: #727272;
+	font-size: 15px;
+}
+
+/* ========= Projects =============*/
+.Projects{
+	background-image: url("../images/project-bg.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-position: 50% 50%;
+}
+.projects-overlay{
+	background-color: rgba(31, 31, 31, 0.75);
+	padding-top: 20px;
+	padding-bottom: 80px;
+}
+.carousel-indicators{
+	bottom: -40px;
+}
+.carousel-inner .item img{
+	border: 2px solid #129cf3;
+	padding: 3px;
+}
+.Projects h2{
+	color: #d8d8d8;
+}
+.project-caption{
+	padding-bottom: 70px; 
+}
+.project-caption h2{
+	color: #129cf3;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 30px;
+	margin-top: 25px;
+	padding-bottom: 10px;
+}
+.project-caption h4{
+	color: #129cf3;
+	font-size: 24px;
+}
+.project-caption h4 span{
+	color: #d8d8d8;
+	font-style: italic;
+	font-weight: 400;
+}
+.project-caption p{
+	color: #d8d8d8;
+	font-size: 18px;
+	line-height: 27px;
+	padding-top: 35px;
+}
+
+/* ========== Skills ========= */
+.skill-names .skill-unit{
+	position: relative;
+	padding-left: 90px;
+	padding-top: 30px;
+	padding-right: 20px;
+}
+.skill-unit .skill-icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+}

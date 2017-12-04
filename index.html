@@ -1,86 +1,343 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Lobster|Timmana" rel="stylesheet">
-        <title>
-            Abhishek Pillai
-        </title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+
+        <!-- fonts selected -->
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Timmana|Raleway|Source+Sans+Pro" rel="stylesheet">        
+                
+        <title>Abhishek Pillai</title>
+
+        <!-- css files -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        
+        <!-- favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
-    <body>            
-        <section id="Home">
-            <a>
-                <e id="typewriter"></e><br><br>
-                <div id="button-link">
-                    Enter
-                    <i id = "arrow" class = "right-arrow"></i>
+    <body>      
+        
+        <!-- Header -->      
+        <header class="header">
+            <div class="header-overlay">
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-md-12">
+                            
+                            <!-- Text -->
+                            <div class="text-center">
+                                <h1 id="typewriter"></h1>
+                            </div>                            
+                            <!-- Button -->
+                            <div class="text-center">
+                                <h1 id="button-link">
+                                    Enter
+                                    <i class="fa fa-angle-right"></i>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>         
+                </div>            
+            </div>
+        </header>    
+
+
+        <!-- About me -->      
+        <section class="About">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header">
+                            <h2>ABOUT ME</h2>
+                            <p>
+                                I am a Masters student at Texas A&M University, studying Management Information Systems
+                                which is a blend of Management and Technology. Having worked in IT for about two years as
+                                a software developer building web pages using ASP.Net, I look forward to improving my skills
+                                by learning new technologies and frameworks.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </a>
-        </section>        
-        <section id="About">
-            <!--div class="header" id="header">
-                <a href="#Home">Home</a>
-                <a href="#About">About Me</a>
-                <a href="#Project">Projects</a>
-                <a href="#Contact">Contact Details</a>
-            </div-->
-            <hr>                                
-            <h1>
-                Welcome!
-            </h1>
-            <table>
-                <tr>
-                    <td>
-                        <a class="heading">About Me<br></br></a>
-                        <a> I am a Masters student at Texas A&M University, studying Management Information Systems
-                            which is a blend of Management and Technology. Having worked in IT for about two years as
-                            a software developer building web pages using ASP.Net, I look forward to improving my skills
-                            by learning new technologies and frameworks.
-                        </a>
-                        <ul> 
-                            <li>Social Media Analyst</li>
-                            <li>Web Developer</li>
-                            <li>Software Engineer</li>
-                        </ul>
-                    </td>
-                    <td class="tdright"><img src="images/ab.jpg" alt="abhishek"></td>
-                </tr>
-            </table>
-        </section>
-        <section id="Skill">
-            <div id="leftP">
-                <table>
-                    <tr><td>HTML5</td><td>80%</td></tr>
-                    <tr><td>CSS</td><td>70%</td></tr>
-                    <tr><td>JavaScript</td><td>80%</td></tr>
-                    <tr><td>ASP.Net</td><td>80%</td></tr>
-                    <tr><td>Microsoft SQL</td><td>85%</td></tr>
-                    <tr><td>Angular2</td><td>70%</td></tr>
-                    <tr><td>JQuery</td><td>40%</td></tr>
-                </table>
             </div>
-            <div id="rightP">
-                <table>
-                    <tr><td>Java</td><td>80%</td></tr>
-                    <tr><td>C#</td><td>80%</td></tr>
-                    <tr><td>Python</td><td>70%</td></tr>
-                    <tr><td>T-SQL</td><td>40%</td></tr>
-                </table>
+            <div class="container">                
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="abhishek-image">
+                            <img class="img-responsive img-rounded" src="images/ab.jpg" alt="abhishek">
+                        </div>
+                    </div>
+                    <div class="col-md-9">                                                    
+                        <div class="job-descriptions">
+                            <div class="job">
+                                <div class="job-img">
+                                    <img src="images/blackstone.png" alt="blackstone">
+                                </div>
+                                <h3>Social Media Analyst</h3>
+                                <p>
+                                    As a social media analyst at Blackstone LaunchPad, I help to widen the reach 
+                                    and impact of our organization that aims to help students with entrepreneurial
+                                     interests with the use of social media analysis
+                                </p>
+                            </div>                            
+                            <div class="job">
+                                <div class="job-img">
+                                    <img src="images/tamu.jpg" alt="tamu">
+                                </div>
+                                <h3>Web Developer</h3>
+                                <p>
+                                I was involved in developing the official website using Kentico for the Office of Institutional Effectiveness
+                                and Evaluation. The new website offers more information to the user and the option of
+                                scheduling appointments
+                                </p>
+                            </div>
+                            <div class="job">
+                                <div class="job-img">
+                                    <img src="images/infosys.jpg" alt="infy">
+                                </div>
+                                <h3>Software Developer</h3>
+                                <p>
+                                As a software developer, I designed and developed responsive web pages 
+                                using ASP.Net and integrated web services for users to view the data and project 
+                                managers to update. I also developed a data warehouse for a new application to support 
+                                estimate tracking for different projects
+                                </p>
+                            </div>                                          
+                        </div>
+                    </div>
+                </div>            
             </div>
         </section>
+
+
+        <!-- Projects -->
+        <section class="Projects">
+            <div class="projects-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-header">
+                                <h2>Projects</h2>                                
+                            </div>
+                            <div id="carousel-project" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-project" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-project" data-slide-to="1"></li>
+                                    <li data-target="#carousel-project" data-slide-to="2"></li>
+                                    <li data-target="#carousel-project" data-slide-to="3"></li>
+                                </ol>
+                                <!-- Wrappers -->
+                                <div class="carousel-inner">
+                                    <div class="item active text-center">
+                                        <img src="images/movie-database.jpg" alt="movie-database" 
+                                        class="center-block">
+                                        <div class="project-caption">
+                                            <h2>Movie Collection Database</h2>
+                                            <h4><span>Skills: </span>Angular 2, Node.js, JavaScript, Bootstrap, JQuery</h4>
+                                            <p>Designed web application enabling users to create an account and
+                                                login to add their collection of movies and TV series,
+                                                    mark them as favorites or provide their reviews and read other user's
+                                                    reviews
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item text-center">
+                                        <img src="images/pepsico.jpg" alt="PepsiCo" 
+                                        class="center-block">
+                                        <div class="project-caption">
+                                            <h2>PepsiCo Bid Procurement Analysis</h2>
+                                            <h4><span>Skills: </span>Tableau</h4>
+                                            <p>Analyzed PepsiCo annual procurement process
+                                                and carrier bids across the years to achieve low costs and high service.
+                                                Created a story on Tableau server showcasing the highly effective 
+                                                carrier bids on different lanes
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item text-center">
+                                        <img src="images/dw.jpg" alt="DataWarehouse" 
+                                        class="center-block">
+                                        <div class="project-caption">
+                                            <h2>Dominic's Fine Food Data Warehouse</h2>
+                                            <h4><span>Skills: </span>MS SQL Server, SSIS, SSRS, SSAS and Excel</h4>
+                                            <p>Analyzed sales trends of a retail chain; determined business
+                                                    solutions to improve revenue and increase profitability
+                                                    Designed a data warehouse by concatenating store demographic, sales,
+                                                    and customer data using dimensional models
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item text-center">
+                                        <img src="images/rec.jpg" alt="recession" 
+                                        class="center-block">
+                                        <div class="project-caption">
+                                            <h2>Recession Effect on College Towns</h2>
+                                            <h4><span>Skills: </span>Python: Numpy, Pandas</h4>
+                                            <p>Compared housing rates of university towns against 
+                                                non-university towns during recession of Q3 2008 through Q4 2009
+                                                Proved a hypothesis that both groups performed the same; ran T-Test
+                                            </p>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <!-- Skills -->
+        <section class="Skill">        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md=12">
+                        <div class="section-header">
+                            <h2>Skills</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-names">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- HTML -->        
+                            <h2>Technology</h2>
+                            <div class="skill-unit">
+                                <div class="skill-icon">
+                                    <img src="images/HTML5.png" alt="HTML5">
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" 
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                </div>
+                            </div>                     
+                            <!-- CSS -->               
+                            <div class="skill-unit">
+                                <div class="skill-icon">
+                                    <img src="images/css3.png" alt="CSS3">
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" 
+                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                </div>
+                            </div>                    
+                            <!-- JavaScript -->        
+                            <div class="skill-unit">
+                                <div class="skill-icon">
+                                    <img src="images/js.png" alt="JS">
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" 
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                </div>
+                            </div>   
+                            <!-- ASP.Net -->        
+                            <div class="skill-unit">
+                                <div class="skill-icon">
+                                    <img src="images/asp.png" alt="ASP.Net">
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" 
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                </div>
+                            </div>      
+                            <!-- Angular 2 -->                      
+                            <div class="skill-unit">
+                                <div class="skill-icon">
+                                    <img src="images/angular2.png" alt="Angular2">
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" 
+                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                </div>
+                            </div>        
+                            <!-- JQuery -->   
+                            <div class="skill-unit">
+                                <div class="skill-icon">
+                                    <img src="images/JQuery.png" alt="JQuery">
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" 
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Programming Languages</h2>
+                            <!-- Java -->
+                            <div class="skill-unit">
+                                <div class="skill-icon">
+                                    <img src="images/java.png" alt="Java">
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" 
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                </div>
+                            </div>                     
+                            <!-- C# -->               
+                            <div class="skill-unit">
+                                <div class="skill-icon">
+                                    <img src="images/Csharp.jpg" alt="C#">
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" 
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                </div>
+                            </div>                    
+                            <!-- Python -->        
+                            <div class="skill-unit">
+                                <div class="skill-icon">
+                                    <img src="images/python.jpg" alt="Python">
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" 
+                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                </div>
+                            </div>   
+                            <!-- SQL -->        
+                            <div class="skill-unit">
+                                <div class="skill-icon">
+                                    <img src="images/SQL.png" alt="SQL">
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 85%" 
+                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                                </div>
+                            </div>                                  
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <!-- Contact -->
         <section id="Contact">
-            <div class="footer">
-                <table class="footertable" width: 100%>
-                    <tr>
-                        <td>Abhishek Anilkumar Pillai<br>Phone: (979)304-0481<br>Email: abhipillai@tamu.edu</td>
-                        <td class="media"><img src="images/fb.png" alt="fb"></td>
-                        <td class="media"><img src="images/twitter.jpg" alt="twitter"></td>
-                        <td class="media"><img src="images/9gag.jpg" alt="9gag"></td>
-                    </tr>
-                </table>
-            </div>
+            <hr>
+            <div class="container">
+                <h1>Contact Details</h1><br><br>
+                <div class="row">
+                    <div class="col-md-8">
+                        <a>Abhishek Anilkumar Pillai<br>Phone: (979)304-0481<br>Email: abhipillai@tamu.edu</a>                        
+                    </div>
+                    <div class="col-md-1">
+                        <img src="images/fb.png" alt="fb">
+                    </div>
+                    <div class="col-md-1">
+                        <img src="images/twitter.png" alt="twitter">
+                    </div>
+                    <div class="col-md-1">
+                        <img class="img-responsive img-rounded" src="images/insta.png" alt="instagram">
+                    </div>
+                </div>
+            </div>            
         </section>
-        <script src="script.js"></script>
+        
+        <!--- Bootstrap javascript file -->
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
     </body>
 </html>
