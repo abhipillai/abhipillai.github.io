@@ -144,30 +144,42 @@ img{
 .abhishek-image img{
 	margin-top: 80px;
 }
+.About h3{
+	padding-top: 20px;
+	color: #343434;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 600;
+}
+.school{
+	position: relative;
+	padding-bottom: 45px;
+	padding-left: 160px;
+}
 .job{
 	position: relative;
 	padding-bottom: 20px;
 	padding-left: 160px;
 }
-.job div{
+.job div, .school div{
 	position: absolute;
 	top: 0;
 	left: 0;	
 }
-.job div img{
+.job div img, .school div img{
 	transition: all 1s;
 	-moz-transition: all 1s;
 	-o-transition: all 1s;
 	-webkit-transition: all 1s;
 }
-.job h3{
+.job h4, .school h4{
 	padding-top: 20px;
 	color: #343434;
 	text-transform: uppercase;
 	font-size: 20px;
 	font-weight: 600;
 }
-.job p{
+.job p, .school p{
 	color: #727272;
 	font-size: 15px;
 }
@@ -239,40 +251,15 @@ img{
 	border: 1px solid black;
 }
 /* ========== Skills ========= */
-.skill-names .skill-unit{
-	position: relative;
-	padding-left: 90px;
-	padding-top: 30px;
-	padding-right: 20px;
+.prg-skills{
+	padding: 10px;
 }
-.skill-icon:hover .skill-name{
-	opacity: 1;
+.skill-names{
+	padding: 10px;
+	font-size: 15px;
+	font-weight: 500;
 }
-.skill-icon:hover img{
-	opacity: 0;
-}
-.skill-unit .skill-icon{
-	position: absolute;
-	top: 0;
-	padding-right: 10px;
-	left: 0;
-}
-.skill-unit .skill-name{
-	position: absolute;
-	top: 35%;
-	font-size: 20px;
-	font-weight: 300;
-	color: #129cf3;
-	opacity: 0;
-	transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-}
-.progress{
-	margin-left: 20px;
-}
-
+.skill-icon{}
 /* ========= Contact ======= */
 .contact-overlay{
 	background-size: cover;
