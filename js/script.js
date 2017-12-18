@@ -28,12 +28,10 @@ var i = 0;
 var j = 0;
 var k = 0;
 var speed = 75;
-var speed2 = 2200;
 
 window.onload = typeWriter;
 
 function typeWriter(){
-    setTimeout(function(){document.getElementById("button-link").style.visibility = "visible"}, speed2);
     document.getElementById("button-link").style.color = "whitesmoke";
     document.getElementById("button-link").style.borderColor = "whitesmoke";
     if (i < text.length) {

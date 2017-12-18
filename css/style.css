@@ -9,6 +9,9 @@ body{
 }
 
 /* ===== Generic CSS ====== */
+section{
+	margin-top: 30px;
+}
 .section-header{
 	padding-top: 60px;
 	padding-bottom: 40px;
@@ -26,10 +29,12 @@ body{
 	position: absolute;
 	bottom: -20px;
 	left: 50%;
-	width: 70px;
-	height: 1px;
-	background-color: #129cf3;
-	margin-left: -35px;
+	width: 60%;
+	height: 1.5px;
+	background-image: linear-gradient(to right, rgba(18, 146, 243, 0), 
+	rgba(18, 146, 243, 0.75), rgba(18, 146, 243, 0));
+	/*background-color: #129cf3;*/
+	margin-left: -30%;
 }
 .section-header p{
 	color: #333;
@@ -61,12 +66,56 @@ b{
 b:hover{
 	color: rgb(63, 155, 63);
 }
+.soci{
+	opacity: 0;
+	margin: 20px;
+	padding: 20px;	
+	-webkit-animation: easein 1.5s forwards ease-in;
+    -moz-animation: easein 1.5s forwards ease-in;
+	-o-animation: easein 1.5s forwards ease-in;
+	animation: easein 1.5s forwards ease-in;
+	-webkit-animation-delay: 1.8s;
+	-o-animation-delay: 1.8s;
+	-moz-animation-delay: 1.8s;
+	animation-delay: 1.8s;
+}
+@keyframes easein{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@-webkit-keyframes easein{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@-moz-keyframes easein{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@-o-keyframes easein{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+.divid{
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	position: absolute;
+	width: 0px;
+	height: 40px;
+}
 #button-link{
 	border: 2px solid gray;
 	display: inline-block;
 	padding-right: 20px;		
 	margin: 0 auto;
-	visibility: hidden;
+	opacity: 0;
+	animation: easein 1.5s forwards ease-in;
+	-o-animation: easein 1.5s forwards ease-in;
+	-moz-animation: easein 1.5s forwards ease-in;
+	-webkit-animation: easein 1.5s forwards ease-in;
+	animation-delay: 2.4s;
+	-moz-animation-delay: 2.4s;
+	-webkit-animation-delay: 2.4s;
+	-o-animation-delay: 2.4s;
 	color: #fff;
 	font-size: 60px;
 	line-height: 72px;
@@ -82,20 +131,22 @@ b:hover{
 	line-height: 75px;
 	text-align: center;
 	padding-top: 12%;
-	padding-bottom: 5%;
+	padding-bottom: 10px;
 	color: whitesmoke;
 }
 img{
 	margin: 10px;
 }
-
+.btn-dwnld{
+	margin: 40px;
+}
 /* ===== About us ===== */
 .abhishek-image img{
 	margin-top: 80px;
 }
 .job{
 	position: relative;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	padding-left: 160px;
 }
 .job div{
@@ -173,7 +224,20 @@ img{
 	line-height: 27px;
 	padding-top: 35px;
 }
-
+.btn-view{
+	background-color: #129cf3;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 300;
+	transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	margin-top: 20px;
+}
+.btn-view:hover{
+	border: 1px solid black;
+}
 /* ========== Skills ========= */
 .skill-names .skill-unit{
 	position: relative;
@@ -181,8 +245,48 @@ img{
 	padding-top: 30px;
 	padding-right: 20px;
 }
+.skill-icon:hover .skill-name{
+	opacity: 1;
+}
+.skill-icon:hover img{
+	opacity: 0;
+}
 .skill-unit .skill-icon{
 	position: absolute;
 	top: 0;
+	padding-right: 10px;
 	left: 0;
+}
+.skill-unit .skill-name{
+	position: absolute;
+	top: 35%;
+	font-size: 20px;
+	font-weight: 300;
+	color: #129cf3;
+	opacity: 0;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.progress{
+	margin-left: 20px;
+}
+
+/* ========= Contact ======= */
+.contact-overlay{
+	background-size: cover;
+	background-color: rgba(27, 59, 126, 0.63);
+	padding-top: 20px;
+}
+.contact-details{
+	position: relative;
+}
+.contact-details i{
+	position: absolute;
+	left: 0;
+	top: 0;	
+}
+.contact-details p{
+	padding-left: 20px;
 }
