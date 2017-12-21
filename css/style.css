@@ -10,7 +10,7 @@ body{
 
 /* ===== Generic CSS ====== */
 section{
-	margin-top: 30px;
+	
 }
 .section-header{
 	padding-top: 60px;
@@ -44,6 +44,47 @@ section{
 	/*text-align: center;*/
 	margin-top: 45px;
 }
+/* ======== Nav ==== */
+.navbar{
+	margin-top: -100px;
+	opacity: 0;
+}
+.navbar-default{
+	background-color: transparent;
+	border-color: #444;
+	z-index: 110;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.navbar-default .navbar-nav >li > a{
+	color: #b5b5b5;
+	font-family: "Raleway", sans-serif;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.navbar-default .navbar-nav >li > a:hover{
+	color: #129cf3;
+}
+.navbar-default .navbar-nav >li > a:focus{
+	color: #b5b5b5;
+}
+.navbar-default .navbar-brand{
+	color: #b5b5b5;
+}
+.navbar-default .navbar-brand:hover{
+	color: #129cf3;
+}
+.navbar-default .navbar-nav > .active>a,
+.navbar-default .navbar-nav > .active>a:hover,
+.navbar-default .navbar-nav > .active>a:focus{
+	background-color: transparent;
+	color: #129cf3;
+}
+
 /*  ===== Header ====== */
 .header{
 	background-image: url("../images/beach.png");
@@ -260,11 +301,15 @@ img{
 	font-size: 15px;
 	font-weight: 500;
 }
-.skill-icon{}
+/*======== Interests and Hobbies ===== */
+.item{
+	text-align: center;	
+}
+
 /* ========= Contact ======= */
 .contact-overlay{
 	background-size: cover;
-	background-color: rgba(27, 59, 126, 0.63);
+	background-color: rgba(59, 59, 59, 0.7);
 	padding-top: 20px;
 }
 .contact-details{
