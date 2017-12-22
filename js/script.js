@@ -146,3 +146,7 @@ $(document).ready(function(){
         mode: 'fade'
     });
 });
+// Add animation
+$(document).ready(function(){
+    new WOW().init();
+});
