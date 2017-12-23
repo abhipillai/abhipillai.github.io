@@ -72,41 +72,8 @@ var j = 0;
 var k = 0;
 var speed = 75;
 
-window.onload = typeWriter;
+//window.onload = typeWriter;
 
-function typeWriter(){
-    document.getElementById("button-link").style.color = "whitesmoke";
-    document.getElementById("button-link").style.borderColor = "whitesmoke";
-    if (i < text.length) {
-        document.getElementById("typewriter").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-    }
-    if(i == text.length){
-        document.getElementById("typewriter").innerHTML += "<b id = 'bTag'></b>";
-        typeBTag();
-    }    
-}
-function typeBTag(){
-    if(j < bTag.length){
-        document.getElementById("bTag").innerHTML += bTag.charAt(j);
-        j++;
-        setTimeout(typeBTag, speed);
-    }
-    if(j == bTag.length){        
-        typeNextLine();
-    }
-}
-function typeNextLine(){
-    if(k == 0){
-        document.getElementById("typewriter").innerHTML += "<br>";
-    }
-    if(k < nextLine.length){
-        document.getElementById("typewriter").innerHTML += nextLine.charAt(k);
-        k++;
-        setTimeout(typeNextLine, speed);
-    }
-}
 
 /* show and hide header */
 $(document).ready(function(){
@@ -149,4 +116,10 @@ $(document).ready(function(){
 // Add animation
 $(document).ready(function(){
     new WOW().init();
+});
+// Skill bar
+jQuery('.skillbar').each(function(){
+	jQuery(this).find('.skillbar-bar').animate({
+		width:jQuery(this).attr('data-percent')
+	},2000);
 });
