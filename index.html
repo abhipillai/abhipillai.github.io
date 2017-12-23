@@ -40,9 +40,10 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li><a href="#About" class="nav-item">About Me</a></li>
-                            <li><a href="#Projects" class="nav-item">Projects</a></li>
-                            <li><a href="#Skill" class="nav-item">Skills</a></li>  
-                            <li><a href="#Interests" class="nav-item">Activities and Interests</a></li>                          
+                            <li><a href="#Acads" class="nav-item">Academics and Work Experience</a></li>                             
+                            <li><a href="#Projects" class="nav-item">Projects</a></li>                            
+                            <li><a href="#Interests" class="nav-item">Activities and Interests</a></li>
+                           
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -55,7 +56,12 @@
                             
                             <!-- Text -->
                             <div class="text-center">
-                                <h1 id="typewriter"></h1>
+                                <h1 class="typewriter">
+                                    Hello, I am <b id="bTag">Abhishek Pillai</b>
+                                </h1>
+                                <h1 class="b">
+                                        Welcome to my website
+                                </h1>
                             </div>   
                             <!-- LinkedIn & Github -->
                             <div class="text-center soci">
@@ -86,84 +92,218 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-header">
-                            <h2 class="wow fadeInUp" data-wow-duration="1s">ABOUT ME</h2>
-                            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                                I am a Masters student at Texas A&M University, studying Management Information Systems
-                                which is a blend of Management and Technology. Having worked in IT for about two years as
-                                a software developer building web pages using ASP.Net, I look forward to improving my skills
-                                by learning new technologies and frameworks.
-                            </p>
+                            <h2 class="wow fadeInUp" data-wow-duration="1s">ABOUT ME</h2>                            
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container">                
                 <div class="row">
-                    <div class="col-md-3 wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="col-md-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                         <div class="abhishek-image">
-                            <img class="img-responsive img-rounded" src="images/ab.jpg" alt="abhishek">
+                            <img class="img-responsive img-circle" src="images/ab.jpeg" alt="abhishek">
                         </div>
-                        <a  href="src/Resume_Pillai_Abhishek.docx" download>
-                            <div class="btn btn-view btn-dwnld" target="_block">Download Resume</div>
-                        </a>
+                        <div class="picbox">                        
+                            <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
+                                A Masters student studying Management Information Systems at Texas A&M University. 
+                                I constantly seek new challenges to improve my skills. I am passionate about web development and
+                                I am looking for full time positions starting May 2018.
+                            </p>
+                        </div>
+                        <div class="contact">
+                            <h3>Contact</h3>
+                            <div class="contact-d">
+                                <div class="contact-details">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <p>abhipillai@tamu.edu</p>
+                                </div>
+                                <div class="contact-details">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <p>(979)304-0481</p>
+                                </div>
+                            </div>
+                            <a  href="src/Resume_Pillai_Abhishek.docx" class="dwnld" download>
+                                <div class="btn btn-view btn-dwnld" target="_block">Download Resume</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-9 wow fadeIn" data-wow-duration="1s" data-wow-delay="1.4s"> 
-                        <!--div class="desc-header">
+                    <div class="col-md-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+                        <div class="prg-skills">
+                            <!-- Java -->                            
+                            <div class="skillbar clearfix " data-percent="80%">
+                                <div class="skillbar-title" style="background: #00a8ff;"><span>Java</span></div>
+                                <div class="skillbar-bar" style="background: #00a8ff;"></div>
+                                <div class="skill-bar-percent">80%</div>
+                            </div>
+                            <!--- C# -->
+                            <div class="skillbar clearfix " data-percent="80%">
+                                <div class="skillbar-title" style="background: #00a8ff;"><span>C#</span></div>
+                                <div class="skillbar-bar" style="background: #00a8ff;"></div>
+                                <div class="skill-bar-percent">80%</div>
+                            </div>
+                            <!-- Python -->
+                            <div class="skillbar clearfix " data-percent="70%">
+                                <div class="skillbar-title" style="background: #00a8ff;"><span>Python</span></div>
+                                <div class="skillbar-bar" style="background: #00a8ff;"></div>
+                                <div class="skill-bar-percent">70%</div>
+                            </div>
+                            <!--- JavaScript  -->
+                            <div class="skillbar clearfix " data-percent="80%">
+                                <div class="skillbar-title" style="background: #00a8ff;"><span>JavaScript</span></div>
+                                <div class="skillbar-bar" style="background: #00a8ff;"></div>
+                                <div class="skill-bar-percent">80%</div>
+                            </div> 
+                            <!--  MS SQL -->
+                            <div class="skillbar clearfix " data-percent="85%">
+                                <div class="skillbar-title" style="background: #00a8ff;"><span>MS SQL</span></div>
+                                <div class="skillbar-bar" style="background: #00a8ff;"></div>
+                                <div class="skill-bar-percent">85%</div>
+                            </div>                               
+                            <!-- ASP.Net -->
+                            <div class="skillbar clearfix " data-percent="80%">
+                                <div class="skillbar-title" style="background: #00a8ff;"><span>ASP.Net</span></div>
+                                <div class="skillbar-bar" style="background: #00a8ff;"></div>
+                                <div class="skill-bar-percent">80%</div>
+                            </div>       
+                            <!-- Angular 2 -->
+                            <div class="skillbar clearfix " data-percent="70%">
+                                <div class="skillbar-title" style="background: #00a8ff;"><span>Angular 2</span></div>
+                                <div class="skillbar-bar" style="background: #00a8ff;"></div>
+                                <div class="skill-bar-percent">70%</div>
+                            </div> 
+                            <!-- Node JS -->
+                            <div class="skillbar clearfix " data-percent="50%">
+                                <div class="skillbar-title" style="background: #00a8ff;"><span>Node.JS</span></div>
+                                <div class="skillbar-bar" style="background: #00a8ff;"></div>
+                                <div class="skill-bar-percent">50%</div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        
+        <!-- Academics and Work Experience -->
+        <section class="Acads" id="Acads">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header">
+                            <h2 class="wow fadeInUp" data-wow-duration="1s">Academics and Work Experience</h2>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6"> 
+                        <div class="desc-header wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
                             <h3>Academics</h3>
                         </div>                
-                        <div class="schools">
-                            <div class="school">
+                        <div class="schools wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.2s">
+                            <div class="school glowing-border">
                                 <div class="school-img">
-                                    <img src="images/texasanm.png" alt="Texas A&M">
+                                    <img src="images/tamu.jpg" class="img-responsive img-circle" alt="Texas A&M">
                                 </div>
-                                <h4>Texas A&M University</h4>                                
-                                <p>Master of Science in Management Information Systems</p>
+                                <div class="school-text">
+                                    <div class="school-text-gen">
+                                        <h4>Texas A&M University</h4>                                
+                                        <p>Master of Science in Management Information Systems</p>
+                                    </div>
+                                    <div class="school-text-info">
+                                        <bo>Jul 2016 - May 2018</bo><br>
+                                        <bo>GPA: 3.71/4.0</bo>
+                                    </div>
+                                </div>                                
                             </div>
-                            <div class="school">
+                            <div class="school glowing-border">
                                 <div class="school-img">
                                     <img src="images/mumbai-university.jpeg" alt="MU">
                                 </div>
-                                <h4>University of Mumbai</h4>
-                                <p>Bachelor of Engineering in Electronics and Telecommunications</p>
+                                <div class="school-text">
+                                    <div class="school-text-gen">
+                                        <h4>University of Mumbai</h4>
+                                        <p>Bachelor of Engineering in Electronics and Telecommunications</p>
+                                    </div>
+                                    <div class="school-text-info">
+                                        <bo>Aug 2014 - May 2014</bo><br>
+                                        <bo>GPA: 3.6/4.0</bo>
+                                    </div>
+                                </div>
                             </div>
-                        </div>                                  
-                        <div class="desc-header">
+                        </div>
+                    </div>
+                    <div class="col-md-6">                                  
+                        <div class="desc-header wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
                             <h3>Work Experience</h3>
                         </div-->
                         <div class="job-descriptions">
-                            <div class="job">
-                                <div class="job-img">
-                                    <img src="images/infosys.jpg" alt="infy">
+                            <div class="job wow fadeInUp glowing-border" data-wow-duration="1s" data-wow-delay="1.2s">
+                                <div class="job-gen">
+                                    <div class="job-img">
+                                        <img src="images/infosys.jpg" alt="infy" style="top: 20%;">
+                                    </div>                                
+                                    <h4>Software Developer</h4>
                                 </div>
-                                <h4>Software Developer</h4>
-                                <p>
-                                As a software developer, I designed and developed responsive web pages 
-                                using ASP.Net and integrated web services for users to view the data and project 
-                                managers to update. I also developed a data warehouse for a new application to support 
-                                estimate tracking for different projects
-                                </p>
+                                <div class="job-info">
+                                    <h5>
+                                        Software Developer, Infosys Ltd, Bengaluru, India
+                                    </h5>
+                                    <p><ul>
+                                            <li>
+                                                Designed and developed responsive web pages using ASP.Net and integrated 
+                                                web services for end users.
+                                            </li>
+                                            <li>
+                                                Developed a data warehouse for a new application to support 
+                                                estimate tracking for different projects
+                                            </li>
+                                    </ul>                                    
+                                    </p>
+                                </div>
                             </div>                                                  
-                            <div class="job">
-                                <div class="job-img">
-                                    <img src="images/tamu.jpg" alt="tamu">
+                            <div class="job wow fadeIn glowing-border"  data-wow-duration="1s" data-wow-delay="1.4s">
+                                <div class="job-gen">
+                                    <div class="job-img">
+                                        <img src="images/tamu.jpg" alt="tamu">
+                                    </div>
+                                    <h4>Web Developer</h4>
                                 </div>
-                                <h4>Web Developer</h4>
-                                <p>
-                                I was involved in developing the official website using Kentico for the Office of Institutional Effectiveness
-                                and Evaluation. The new website offers more information to the user and the option of
-                                scheduling appointments
-                                </p>
+                                <div class="job-info">
+                                    <h5>
+                                        Web Developer, Texas A&M University
+                                    </h5>
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                Developed the official website using Kentico for the Office of Institutional Effectiveness
+                                                and Evaluation
+                                            </li>
+                                        </ul>                                    
+                                    </p>
+                                </div>
                             </div>                            
-                            <div class="job">
-                                <div class="job-img">
-                                    <img src="images/blackstone.png" alt="blackstone">
+                            <div class="job wow fadeIn glowing-border" data-wow-duration="1s" data-wow-delay="1.6s">
+                                <div class="job-gen">
+                                    <div class="job-img">
+                                        <img src="images/blackstone.png" alt="blackstone">
+                                    </div>
+                                    <h4>Social Media Analyst</h4>
                                 </div>
-                                <h4>Social Media Analyst</h4>
-                                <p>
-                                    As a social media analyst at Blackstone LaunchPad, I help to widen the reach 
-                                    and impact of our organization that aims to help students with entrepreneurial
-                                        interests with the use of social media analysis
-                                </p>
+                                <div class="job-info">                                
+                                    <h5>
+                                        Social Media Analyst, Blackstone LaunchPad
+                                    </h5>
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                As a social media analyst at Blackstone LaunchPad, I help to widen the reach 
+                                                and impact of our organization that aims to help students with entrepreneurial
+                                                interests with the use of social media analysis
+                                            </li>
+                                        </ul>                                        
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -256,123 +396,7 @@
             </div>            
         </section>
 
-
-        <!-- Skills -->
-        <section class="Skill" id="Skill">        
-            <div class="container">
-                <div class="row">
-                    <div class="col-md=12 wow fadeInUp" data-wow-duration="1s">
-                        <div class="section-header">
-                            <h2>Skills</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-names">
-                <div class="container">
-                    <div class="row">                          
-                        <div class="col-md-6 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                            <div class="prg-skills">
-                                <!-- Java -->
-                                <div class="skill-unit">
-                                    <div class="skill-icon">                                        
-                                        <div class="skill-name">Java</div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" 
-                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                                    </div>
-                                </div>                     
-                                <!-- C# -->               
-                                <div class="skill-unit">
-                                    <div class="skill-icon">
-                                        <div class="skill-name">C#</div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" 
-                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                                    </div>
-                                </div>                    
-                                <!-- Python -->        
-                                <div class="skill-unit">
-                                    <div class="skill-icon">                                       
-                                        <div class="skill-name">Python</div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" 
-                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                    </div>
-                                </div>
-                                <!-- JavaScript -->        
-                                <div class="skill-unit">
-                                    <div class="skill-icon">
-                                        <div class="skill-name">JavaScript</div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" 
-                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                                    </div>
-                                </div>   
-                            </div>
-                        </div>
-                        <div class="col-md-6 wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
-                            <div class="prg-skills">
-                                <div class="skill-unit">
-                                    <div classs="skill-icon">
-                                        <div class="skill-name">MS SQL</div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 85%" 
-                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-                                    </div>
-                                </div>   
-                                <!-- ASP.Net -->        
-                                <div class="skill-unit">
-                                    <div class="skill-icon">
-                                        <div class="skill-name">ASP.Net</div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" 
-                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                                    </div>
-                                </div>      
-                                <!-- Angular 2 -->                      
-                                <div class="skill-unit">
-                                    <div class="skill-icon">
-                                        <div class="skill-name">Angular 2</div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" 
-                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                    </div>
-                                </div>        
-                                <!-- JQuery -->   
-                                <div class="skill-unit">
-                                    <div class="skill-icon">
-                                        <div class="skill-name">JQuery</div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" 
-                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-                                    </div>
-                                </div>
-                                <!-- Node.js -->
-                                <div class="skill-unit">
-                                    <div class="skill-icon">
-                                        <div class="skill-name">Node.JS</div>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 40%" 
-                                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
-                                    </div>
-                                </div>                  
-                            </div>                
-                        </div>
-                    </div>
-                </div>
-            </div>            
-        </section>
-
+        <!-- Interests -->
         <section class="Interests" id="Interests">
             <div class="container">
                 <div class="row">
@@ -410,46 +434,6 @@
             </div>
         </section>
 
-        <!-- Contact -->
-        <section class="Contact">       
-            <div class="contact-overlay">
-               <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="contact-details">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                                <p>abhipillai@tamu.edu</p>
-                            </div>
-                            <div class="contact-details">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                <p>(979)304-0481</p>
-                            </div>
-                        </div>
-                        <div class="col-md-offset-2 col-md-1">
-                            <a href="https://www.facebook.com/abhishek.pillai.73?ref=bookmarks" target="_block">
-                                <img class="img-circle" src="images/fb.png" alt="facebook">
-                            </a>
-                        </div>
-                        <div class="col-md-1">
-                            <a href="https://www.instagram.com/abfloyd27/" target="_block">
-                                <img src="images/insta.png" alt="instagram">
-                            </a>
-                        </div>
-                        <div class="col-md-1">
-                            <a href="https://twitter.com/frloyd27" target="_block">
-                                <img class="img-circle" src="images/twitter.png" alt="twitter">
-                            </a>
-                        </div>
-                        <div class="col-md-1">
-                            <a href="https://9gag.com/u/freakwiz" target="_block">
-                                <img class="img-circle" src="images/9gag.png" alt="9gag">
-                            </a>
-                        </div>
-                    </div>
-                </div>        
-            </div>
-        </section>
-        
         <!--- Bootstrap javascript file -->
         <script src="js/jquery.js"></script>
         <script src="js/script.js"></script>
