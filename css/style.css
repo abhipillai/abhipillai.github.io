@@ -9,9 +9,12 @@ body{
 }
 
 /* ===== Generic CSS ====== */
+.section{
+	padding-bottom: 10px;
+}
 .section-header{
-	padding-top: 60px;
-	padding-bottom: 40px;
+	padding-top: 30px;
+	padding-bottom: 20px;
 }
 .section-header h2{
 	position: relative;
@@ -26,10 +29,12 @@ body{
 	position: absolute;
 	bottom: -20px;
 	left: 50%;
-	width: 70px;
-	height: 1px;
-	background-color: #129cf3;
-	margin-left: -35px;
+	width: 60%;
+	height: 1.5px;
+	background-image: linear-gradient(to right, rgba(18, 146, 243, 0), 
+	rgba(18, 146, 243, 0.75), rgba(18, 146, 243, 0));
+	/*background-color: #129cf3;*/
+	margin-left: -30%;
 }
 .section-header p{
 	color: #333;
@@ -39,6 +44,47 @@ body{
 	/*text-align: center;*/
 	margin-top: 45px;
 }
+/* ======== Nav ==== */
+.navbar{
+	margin-top: -100px;
+	opacity: 0;
+}
+.navbar-default{
+	background-color: transparent;
+	border-color: #444;
+	z-index: 110;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.navbar-default .navbar-nav >li > a{
+	color: #b5b5b5;
+	font-family: "Raleway", sans-serif;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.navbar-default .navbar-nav >li > a:hover{
+	color: #129cf3;
+}
+.navbar-default .navbar-nav >li > a:focus{
+	color: #b5b5b5;
+}
+.navbar-default .navbar-brand{
+	color: #b5b5b5;
+}
+.navbar-default .navbar-brand:hover{
+	color: #129cf3;
+}
+.navbar-default .navbar-nav > .active>a,
+.navbar-default .navbar-nav > .active>a:hover,
+.navbar-default .navbar-nav > .active>a:focus{
+	background-color: transparent;
+	color: #129cf3;
+}
+
 /*  ===== Header ====== */
 .header{
 	background-image: url("../images/beach.png");
@@ -49,11 +95,12 @@ body{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	-webkit-background-size: cover;
-	height: 100vh;
+	/*height: 100vh;*/
 }
 .header-overlay{
 	background-color: rgba(31, 31, 31, 0.60);
 	height: 100%;
+	padding-bottom: 70px;
 }
 b{
 	color: rgb(156, 45, 45);
@@ -61,12 +108,56 @@ b{
 b:hover{
 	color: rgb(63, 155, 63);
 }
+.soci{
+	opacity: 0;
+	margin: 20px;
+	padding: 20px;	
+	-webkit-animation: easein 1.5s forwards ease-in;
+    -moz-animation: easein 1.5s forwards ease-in;
+	-o-animation: easein 1.5s forwards ease-in;
+	animation: easein 1.5s forwards ease-in;
+	-webkit-animation-delay: 1.8s;
+	-o-animation-delay: 1.8s;
+	-moz-animation-delay: 1.8s;
+	animation-delay: 1.8s;
+}
+@keyframes easein{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@-webkit-keyframes easein{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@-moz-keyframes easein{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@-o-keyframes easein{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+.divid{
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	position: absolute;
+	width: 0px;
+	height: 40px;
+}
 #button-link{
 	border: 2px solid gray;
 	display: inline-block;
 	padding-right: 20px;		
 	margin: 0 auto;
-	visibility: hidden;
+	opacity: 0;
+	animation: easein 1.5s forwards ease-in;
+	-o-animation: easein 1.5s forwards ease-in;
+	-moz-animation: easein 1.5s forwards ease-in;
+	-webkit-animation: easein 1.5s forwards ease-in;
+	animation-delay: 2.4s;
+	-moz-animation-delay: 2.4s;
+	-webkit-animation-delay: 2.4s;
+	-o-animation-delay: 2.4s;
 	color: #fff;
 	font-size: 60px;
 	line-height: 72px;
@@ -76,49 +167,314 @@ b:hover{
 	-moz-transition: all 1s;
 	border-radius: 10px;
 }
-#typewriter{
+
+.typewriter{
 	font-size: 60px;
 	font-weight: 300;
 	line-height: 75px;
 	text-align: center;
 	padding-top: 12%;
-	padding-bottom: 5%;
 	color: whitesmoke;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */	
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	animation: typing 2.2s steps(30, end);
+}
+.b{
+	font-size: 60px;
+	font-weight: 300;
+	line-height: 75px;
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	color: whitesmoke;
+	overflow: hidden; 
+	white-space: nowrap; 
+	margin: 0 auto; 
+	opacity: 0;
+	animation: typing2 2.2s steps(30, end);
+	animation-delay: 1.5s;
+	-o-animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+}
+/* The typing effect */
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+@keyframes typing2 {
+	0% {
+		width: 0;
+	}
+	1%{
+		opacity: 1;
+	}
+	100%{
+		width: 100%;
+		opacity: 1;
+	}
 }
 img{
 	margin: 10px;
 }
-
 /* ===== About us ===== */
-.abhishek-image img{
-	margin-top: 80px;
+.About .row{
+	padding-top: 10px;
 }
-.job{
+.abhishek-image img{
+	display: block;
+	margin: auto;
+	padding-bottom: 10px;
+}
+.picbox p{
+	padding-top: 10px;
+	font-size: 16px;
+	font-weight: 500;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.skillbar {
+  font-family: 'Open Sans', 'sans-serif';
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.contact{
 	position: relative;
 	padding-bottom: 30px;
-	padding-left: 160px;
 }
-.job div{
+.contact .contact-d{
+	position: absolute;
+}
+.contact h3{
+	font-size: 22px;
+	font-weight: 700;
+}
+.contact-details{
+	position: relative;
+}
+.contact-details i{
 	position: absolute;
 	top: 0;
-	left: 0;	
+}
+.contact-details p{
+	padding-left: 25px;
+}
+.contact .dwnld{
+	padding-left: 240px;
+}
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width: 100px;
+	font-weight:bold;
+	font-size:16px;
+	color:#fff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:14px;
+	height:35px;
+	line-height:35px;
+	color:#444;
+	color:rgba(0, 0, 0, 0.7);
+}
+/* ====== Academics and Work Experience ===== */
+.Acads{
+	background-color: #edeff4;
+}
+.desc-header h3{
+	text-align: center;
+	font-size: 32px;
+	font-weight: 500;
+}
+.school{
+	position: relative;
+	margin-top: 40px;
+}
+.school img{
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-webkit-transition: all 1s;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.school .school-text{
+	padding-left: 150px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	margin-top: 20px;
+	transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.glowing-border {
+    border: 2px solid #9ecaed;
+	border-radius: 7px;
+	box-shadow: 0 0 4px #9ecaed;
+	-o-box-shadow: 0 0 4px #9ecaed;
+	-moz-box-shadow: 0 0 4px #9ecaed;
+	-webkit-box-shadow: 0 0 4px #9ecaed;
+}
+.school:hover{
+	background-color: #add5f7;
+}
+.school .school-text .school-text-gen{
+	text-align: center;
+	opacity: 1;
+	transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.school .school-text:hover .school-text-gen{
+	opacity: 0;
+}
+.school .school-text .school-text-info{
+	position: absolute;
+	top: 40px;
+	padding-left: 80px;
+	padding-bottom: 40px;
+	opacity: 0;
+	transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	text-align: center;
+}
+.school-text-info bo{
+	font-weight: 500;
+	font-size: 24px;
+}
+.school .school-text:hover .school-text-info{
+	opacity: 1;
+}
+.job{
+	margin-top: 10px;
+	position: relative;
+	padding-bottom: 50px;
+	transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.job-descriptions{
+	padding-bottom: 20px;
+}
+.job-gen{
+	transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.job .job-gen h4{
+	padding-top: 60px;
+}
+.job-info{
+	position: absolute;
+	transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.job-info h5{
+	font-size: 22px;
+}
+.job-info p{
+	padding: 0px 10px;
 }
 .job div img{
+	position: absolute;
+	left: 0;
 	transition: all 1s;
 	-moz-transition: all 1s;
 	-o-transition: all 1s;
 	-webkit-transition: all 1s;
 }
-.job h3{
-	padding-top: 20px;
+.job h4, .school h4{
 	color: #343434;
 	text-transform: uppercase;
 	font-size: 20px;
 	font-weight: 600;
 }
-.job p{
+.job h4{
+	padding-top: 40px;
+	padding-left: 180px;	
+}
+.job-info{
+	opacity: 0;
+	position: absolute;
+	top: 15px;
+	padding: 0px 15px;
+}
+.job:hover .job-gen{
+	opacity: 0;
+}
+.job:hover{
+	background-color: #add5f7;
+}
+.job:hover .job-info{
+	opacity: 1;
+}
+.job p, .school p{
 	color: #727272;
-	font-size: 15px;
+	font-size: 13px;
 }
 
 /* ========= Projects =============*/
@@ -135,20 +491,13 @@ img{
 .projects-overlay{
 	background-color: rgba(31, 31, 31, 0.75);
 	padding-top: 20px;
-	padding-bottom: 80px;
-}
-.carousel-indicators{
-	bottom: -40px;
-}
-.carousel-inner .item img{
-	border: 2px solid #129cf3;
-	padding: 3px;
+	padding-bottom: 40px;
 }
 .Projects h2{
 	color: #d8d8d8;
 }
 .project-caption{
-	padding-bottom: 70px; 
+	padding-bottom: 40px; 
 }
 .project-caption h2{
 	color: #129cf3;
@@ -172,17 +521,35 @@ img{
 	font-size: 18px;
 	line-height: 27px;
 	padding-top: 35px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+.btn-view{
+	background-color: #129cf3;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 300;
+	transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.btn-view:hover{
+	border: 1px solid black;
+}
+/* ========== Skills ========= */
+.prg-skills{
+	padding: 10px;
+}
+.skill-names{
+	padding: 10px;
+	font-size: 15px;
+	font-weight: 500;
+}
+/*======== Interests and Hobbies ===== */
+.item{
+	text-align: center;	
 }
 
-/* ========== Skills ========= */
-.skill-names .skill-unit{
-	position: relative;
-	padding-left: 90px;
-	padding-top: 30px;
-	padding-right: 20px;
-}
-.skill-unit .skill-icon{
-	position: absolute;
-	top: 0;
-	left: 0;
-}
+/* ========= Contact ======= */
+
