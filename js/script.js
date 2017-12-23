@@ -1,6 +1,5 @@
 "use strict";
 
-$(doucment).addEventListener("touchstart", function(){}, true)
 // smooth scrolling
 $(document).ready(function(){
     $('a[href^="#"]').on('click', function (e) {
