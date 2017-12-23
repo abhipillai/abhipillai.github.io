@@ -281,8 +281,8 @@ img{
 .contact-details p{
 	padding-left: 25px;
 }
-.contact .dwnld{
-	padding-left: 240px;
+.dwnld{
+	padding-left: 200px;
 }
 .skillbar-title {
 	position:absolute;
@@ -539,7 +539,8 @@ img{
 }
 /* ========== Skills ========= */
 .prg-skills{
-	padding: 10px;
+	padding-left: 10px;
+	padding-bottom: 20px;
 }
 .skill-names{
 	padding: 10px;
