@@ -1,5 +1,11 @@
 "use strict";
 
+if (document.readyState == 'complete')
+doOnLoad();
+
+$(window).bind("load", doOnLoad);
+
+
 // smooth scrolling
 $(document).ready(function(){
     $('a[href^="#"]').on('click', function (e) {
