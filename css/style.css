@@ -105,7 +105,7 @@ body{
 b{
 	color: rgb(156, 45, 45);
 }
-b:hover{
+b:hover, b:active{
 	color: rgb(63, 155, 63);
 }
 .soci{
@@ -372,7 +372,7 @@ img{
 	-moz-box-shadow: 0 0 4px #9ecaed;
 	-webkit-box-shadow: 0 0 4px #9ecaed;
 }
-.school:hover{
+.school:hover, school:active{
 	background-color: #add5f7;
 }
 .school .school-text .school-text-gen{
@@ -383,7 +383,7 @@ img{
 	-moz-transition: all 1s;
 	-webkit-transition: all 1s;
 }
-.school .school-text:hover .school-text-gen{
+.school .school-text:hover .school-text-gen, .school .school-text:active .school-text-gen{
 	opacity: 0;
 }
 .school .school-text .school-text-info{
@@ -402,7 +402,7 @@ img{
 	font-weight: 500;
 	font-size: 24px;
 }
-.school .school-text:hover .school-text-info{
+.school .school-text:hover .school-text-info, .school .school-text:active .school-text-info{
 	opacity: 1;
 }
 .job{
@@ -463,13 +463,13 @@ img{
 	top: 15px;
 	padding: 0px 15px;
 }
-.job:hover .job-gen{
+.job:hover .job-gen, .job:active .job-gen{
 	opacity: 0;
 }
-.job:hover{
+.job:hover, .job:active{
 	background-color: #add5f7;
 }
-.job:hover .job-info{
+.job:hover .job-info, .job:active .job-info{
 	opacity: 1;
 }
 .job p, .school p{
@@ -539,7 +539,7 @@ img{
 	-moz-transition: all 1s;
 	-webkit-transition: all 1s;
 }
-.btn-view:hover{
+.btn-view:hover, .btn-view:active{
 	border: 1px solid black;
 }
 /* ========== Skills ========= */
