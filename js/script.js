@@ -5,8 +5,10 @@ $(document).ready(function(){
     var widthpad = $('.padtop').width();
     //var winwidth = $(window).width();
     if(720 > widthpad){
-        $('h1').removeClass("typewriter");
-        $('h1').removeClass("b");
+        $('.typew').removeClass("typewriter");
+        $('.typew').removeClass("b");
+        $('.typew').addClass("wow");
+        $('.typew').addClass("fadeInUp");
     }
 })
 // smooth scrolling
