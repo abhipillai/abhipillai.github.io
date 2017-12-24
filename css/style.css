@@ -266,6 +266,7 @@ img{
 }
 .contact .contact-d{
 	position: absolute;
+	padding-bottom: 20px;
 }
 .contact h3{
 	font-size: 22px;
@@ -541,7 +542,7 @@ img{
 .prg-skills{
 	padding-left: 10px;
 	padding-bottom: 20px;
-	padding-top: 10px;
+	padding-top: 25px;
 }
 .skill-names{
 	padding: 10px;
