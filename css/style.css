@@ -167,27 +167,23 @@ b:hover{
 	-moz-transition: all 1s;
 	border-radius: 10px;
 }
-
-.typewriter{
+.padtop{
+	padding-top: 12%;
+}
+.typew{
 	font-size: 60px;
 	font-weight: 300;
 	line-height: 75px;
 	text-align: center;
-	padding-top: 12%;
 	color: whitesmoke;
+}
+.typewriter{
 	overflow: hidden; /* Ensures the content is not revealed until the animation */	
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 	animation: typing 2.2s steps(30, end);
 }
 .b{
-	font-size: 60px;
-	font-weight: 300;
-	line-height: 75px;
-	text-align: center;
-	padding-top: 0px;
-	padding-bottom: 10px;
-	color: whitesmoke;
 	overflow: hidden; 
 	white-space: nowrap; 
 	margin: 0 auto; 

@@ -1,5 +1,14 @@
 "use strict";
 
+//width check
+$(document).ready(function(){
+    var widthpad = $('.padtop').width();
+    //var winwidth = $(window).width();
+    if(720 > widthpad){
+        $('h1').removeClass("typewriter");
+        $('h1').removeClass("b");
+    }
+})
 // smooth scrolling
 $(document).ready(function(){
     $('a[href^="#"]').on('click', function (e) {
