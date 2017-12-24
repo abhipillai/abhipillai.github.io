@@ -255,10 +255,15 @@ img{
 	-o-transition-property:width, background-color;
 	transition-property:width, background-color;
 }
-
+.padd{
+	padding-top: 40px;
+}
+.prg h3{
+	font-size: 22px;
+	font-weight: 700;
+}
 .contact{
 	position: relative;
-	padding-bottom: 30px;
 }
 .contact .contact-d{
 	position: absolute;

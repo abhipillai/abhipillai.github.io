@@ -9,6 +9,10 @@ $(document).ready(function(){
         $('.typew').removeClass("b");
         $('.typew').addClass("wow");
         $('.typew').addClass("fadeInUp");
+        $('.typew').attr("data-wow-duration", "1.5s")
+    }
+    if(940 > $(window).width()){
+        $('.prg').addClass("padd");
     }
 })
 // smooth scrolling
