@@ -380,21 +380,13 @@ img{
 }
 .school .school-text .school-text-gen{
 	text-align: center;
-	opacity: 1;
 	transition: all 1s;
 	-o-transition: all 1s;
 	-moz-transition: all 1s;
 	-webkit-transition: all 1s;
 }
-.school .school-text:hover .school-text-gen{
-	opacity: 0;
-}
 .school .school-text .school-text-info{
-	position: absolute;
-	top: 40px;
-	padding-left: 80px;
-	padding-bottom: 40px;
-	opacity: 0;
+	padding-right: 10%;
 	transition: all 1s;
 	-o-transition: all 1s;
 	-moz-transition: all 1s;
@@ -403,10 +395,8 @@ img{
 }
 .school-text-info bo{
 	font-weight: 500;
-	font-size: 24px;
-}
-.school .school-text:hover .school-text-info{
-	opacity: 1;
+	font-size: 13px;
+	color: #727272;
 }
 .job{
 	margin-top: 10px;
