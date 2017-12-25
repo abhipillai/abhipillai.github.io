@@ -1,5 +1,10 @@
 "use strict";
 
+//div to include content
+$(document).ready(function(){
+    var newheight = $('.job .job-info').height();
+    $('.job').height(newheight);
+});
 //width check
 $(document).ready(function(){
     var widthpad = $('.padtop').width();
